@@ -11,5 +11,7 @@ namespace LeaveManagementSystemDemo.Data
 
 
         }
+
+        public DbSet<LeaveType> LeaveTypes { get; set; }
     }
 }
