@@ -118,6 +118,7 @@ public class LeaveTypesController : Controller
 
         var leavetype = await _context.LeaveTypes
             .FirstOrDefaultAsync(m => m.Id == id);
+
         if (leavetype == null)
         {
             return NotFound();
